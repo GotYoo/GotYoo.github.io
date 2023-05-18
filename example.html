@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        .box {
+            margin: 200px auto;
+            width: 500px;
+            height: 500px;
+            background-image: url(./zxr.jpg);
+            background-size: 500px 4500px;
+            animation: change 1s steps(9) infinite;
+        }
+        @keyframes change {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 0 -4500px;
+            }
+        } 
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
